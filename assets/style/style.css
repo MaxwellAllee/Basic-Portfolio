@@ -1,9 +1,52 @@
-*{
-    box-sizing: border-box;
+
+*
+ {
+  box-sizing: border-box;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 body{
-    margin: 0 0 10px;
+    
     padding: 0px;
     background-image: url("../images/full-bloom.png");
 }
@@ -12,11 +55,11 @@ header{
     background-color:#ffff ;
     padding: 0px;
     color: #777777;
-    height: 81px;
+    height: 90px;
     border-bottom-style: solid;
     border-color: #cccccc;
     border-width: 2px;
-
+    
 }
 h1 {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
@@ -24,14 +67,18 @@ h1 {
 .top{
     margin:0 auto;
     max-width: 960px;
+    
 }
 .greenbox{
+    
     float: left;
     background-color:#4aaaa5;
     color: #ffff;
-    width: 260px;
+    width: 275px;
     top: 0px;
     text-align: center;
+    height: 88px;
+    padding: 20px
 }
 .additionalPages{
     float: right;
@@ -41,7 +88,6 @@ h1 {
 }
 .middle {
     text-decoration: none;
-    
     color: #777777;
     height: 15px;
     border-left: .25px solid #77777755;
@@ -92,17 +138,7 @@ p {
 }
 
 
-.copyright{
-    margin-top: 380px;
-    padding: 25px;
-    text-align: center;
-    color: #cccccc;
-    background-color: #666666;
-    border-top-style: solid;
-    border-top-width: 10px;
-    border-top-color: #4aaaa5;
-    margin-bottom: 0px;
-}
+
 input{
     margin-top: 8px;
     margin-bottom: 10px;
@@ -114,10 +150,13 @@ input[type=text]{
     border-style: solid;
     height: 27px;
 }
-input[name=message]{
+.message{
     width:100%;
     height: 200px;
     margin-top: 10px;
+    border-color:#77777760;
+    border-width: 1px;
+    border-style: solid;
 }
 input[type=submit]{
     background-color: #4aaaa5;
@@ -131,108 +170,45 @@ input[type=submit]{
         color: #777777;
     
     }
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+      }
+      .clearfix { display: inline-block; }
+      * html .clearfix { height: 1%; }
+      .clearfix { display: block; }
   
-    .photo1{
+    .photo{
+        float: left;
         position: relative;
          margin: 30px;
-        
     }
-      .photo1Txt{
+      .photoTxt{
         position: absolute;
         top: 75%;
-        left: 0%;
-        background-color: #4aaaa5;
-        color: #ffffff;
-        text-align: center;
-        width: 245px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        
-    }
-
-    .photo2{
-        
-        position: relative;
-        margin: 10px;
-        left: 300px;
-        top: -234px;
-       
-    }
-      .photo2Txt{
-        position: absolute;
-        top: 75%;
-        left: 0%;
+        left: 0px;
         background-color: #4aaaa5;
         color: #ffffff;
         text-align: center;
         width: 250px;
         padding-top: 10px;
-        padding-bottom: 10px;
-        
+        padding-bottom: 10px;    
     }
 
-    .photo3{
-        
-        position: relative;
-        margin: 30px;
-        bottom: 240px;
-        
-        
-       
-    }
-      .photo3Txt{
-        position: absolute;
-        top: 75%;
-        left: 0%;
-        background-color: #4aaaa5;
-        color: #ffffff;
+    .footer {
+         
+        margin-top: 18.75%;
+        padding: 20px;
         text-align: center;
-        width: 250px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        
-    }
-
-    .photo4{
-    
-        
-    
-        position: relative;
-        margin: 10px;
-        left: 300px;
-        top: -474px;
-
-     
-    }
-      .photo4Txt{
-        position: absolute;
-        top: 75%;
-        left: 0%;
-        background-color: #4aaaa5;
-        color: #ffffff;
-        text-align: center;
-        width: 250px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        
-    }
-    .photo5{
-  
-        top: -458px;
-        position: relative;
-        left: 19px;
-        margin: 10px; 
-    }
-      .photo5Txt{
-        position: absolute;
-        top: 75%;
-        left: 0%;
-        background-color: #4aaaa5;
-        color: #ffffff;
-        text-align: center;
-        width: 250px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        
-    }
-
+        width: 100%;
+        color: #cccccc;
+        background-color: #666666;
+        border-top-style: solid;
+        border-top-width: 10px;
+        border-top-color: #4aaaa5;
+        bottom: 0px;
+      }
